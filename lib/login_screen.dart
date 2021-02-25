@@ -86,7 +86,7 @@ class LoginScreen extends StatelessWidget {
                                         alignment: Alignment.bottomCenter,
                                         child:
                                         Text(
-                                          "Добро подаловать на площадку FERMA",
+                                          "Добро пожаловать на площадку FERMA",
                                           style: TextStyle(fontSize:48.0, fontWeight: FontWeight.bold, color: Color.fromRGBO(67,76,75,1)),
                                         )),
                                   ),
@@ -112,12 +112,10 @@ class LoginScreen extends StatelessWidget {
                                                       Text("У вас ещё\nнет аккаунта ?",
                                                         style: TextStyle(fontSize:45.0,color: Color.fromRGBO(67,76,75,1)),
                                                       ),
-
                                                       GestureDetector(
                                                           child: Text("Зарегестрироваться", style: TextStyle(fontSize:20.0, decoration: TextDecoration.underline, color: Color.fromRGBO(108,179,211,1))),
                                                           onTap: () {}
                                                           )
-
                                                     ]
                                                 ),
                                               )
