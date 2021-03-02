@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:login_screen/Components/RoundedPasswordField.dart';
-import 'package:login_screen/Components/RoundedInputField.dart';
+import 'package:login_screen/Components/Login_screen/RoundedInputField.dart';
+import 'package:login_screen/Components/Login_screen/RoundedPasswordField.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({

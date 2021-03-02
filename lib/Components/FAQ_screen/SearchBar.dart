@@ -12,7 +12,6 @@ class SearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return
     Row(
         children: <Widget>[
@@ -20,6 +19,7 @@ class SearchBar extends StatelessWidget {
               flex: 5,
               child:
               Container(
+                  constraints: BoxConstraints.expand(),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(15),
@@ -56,19 +56,17 @@ class SearchBar extends StatelessWidget {
           Expanded(
               flex: 1,
               child:
-              FloatingActionButton.extended(
-                backgroundColor:Color.fromRGBO(162, 207, 106, 1),
-                onPressed: () => {},
-                //label: Text('Поиск', style: TextStyle(fontSize: 20.0)),
-                label: AutoSizeText('Поиск', style: TextStyle(fontSize: 20.0)),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.only(
-                  bottomRight: Radius.circular (15),
-                  topRight: Radius.circular (15),
-                  bottomLeft: Radius.circular (0),
-                  topLeft: Radius.circular (0),
-                )
-                ),
-              )
+              Container(
+                  constraints: BoxConstraints.expand(),
+                  child:
+                  OutlinedButton(
+                      onPressed: () {},
+                      style: OutlinedButton.styleFrom(
+                        backgroundColor:  Color.fromRGBO(162, 207, 106, 1),
+                      ),
+                      child: AutoSizeText('Поиск', style: TextStyle(fontSize: 32.0, color: Colors.white))
+                  )
+                  )
           )
         ]
     );

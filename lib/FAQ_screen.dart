@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:login_screen/Components/QuestionButton.dart';
-import 'package:login_screen/Components/SearchBar.dart';
+import 'package:login_screen/Components/FAQ_screen/QuestionButton.dart';
+import 'package:login_screen/Components/FAQ_screen/SearchBar.dart';
 import 'package:login_screen/styles.dart';
 
 class FAQ_screen extends StatelessWidget {
@@ -48,7 +48,7 @@ class FAQ_screen extends StatelessWidget {
                                                       child:Column(
                                                           children: <Widget>[
                                                             Spacer(
-                                                              flex: 1,
+                                                              flex: 1 ,
                                                             ),
                                                             Expanded(
                                                                 flex: 1,
@@ -71,7 +71,7 @@ class FAQ_screen extends StatelessWidget {
                                                                 )
                                                             ),
                                                             Expanded(
-                                                                flex: 1,
+                                                                flex: 2,
                                                                 child: Align(
                                                                     alignment: Alignment.centerLeft,
                                                                     child: Container(
@@ -89,7 +89,7 @@ class FAQ_screen extends StatelessWidget {
                                                                 flex: 2
                                                             ),
                                                             Expanded(
-                                                              flex: 1,
+                                                              flex: 2,
                                                               child: Align(
                                                                   alignment: Alignment.centerLeft,
                                                                   child: AutoSizeText(
