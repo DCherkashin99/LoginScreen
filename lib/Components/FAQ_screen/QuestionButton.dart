@@ -18,12 +18,14 @@ class QuestionButton extends StatelessWidget {
             flex: 10,
             child:
             OutlinedButton(
-                onPressed: () {},
                 style: OutlinedButton.styleFrom(
-                    primary: Colors.white,
-                    shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15)),),
-                    side: BorderSide(color: Colors.black, width: 1)
+                  //primary: ,
+                  side: BorderSide(color: Colors.red),
                 ),
+                onPressed: (
+
+                    ) {
+                },
                 child:Row(
                     children: <Widget>[
                       Expanded(
